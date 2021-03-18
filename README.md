@@ -15,19 +15,19 @@ The process of querying and converting tabular database values into JSON or anot
   - [x] Your model must have one field that is a foreign key to user.
   - [x] NOTE: You are not required to build any templates for this lab.
 ## Features - Docker
-  - NOTE Refer to the class demo for built out Dockerfile and docker-compose.yml examples.
-  - Update Dockerfile and docker-compose.yml if needed.
-### Stretch Goals
-  - Research using a production server vs. the built in development server.
-  - Research using postgres instead of sqlite as database.
+  - [x] NOTE Refer to the class demo for built out Dockerfile and docker-compose.yml examples.
+  - [x] Update Dockerfile and docker-compose.yml if needed.
+
 ## Implementation Notes
-- You’ll need to run a command to convert pyproject.toml dependencies to requirements.txt
+- [x] You’ll need to run a command to convert pyproject.toml dependencies to requirements.txt
 poetry export -f requirements.txt -o requirements.txt
 
 If you get an allowed host error examine the bug details and update code as needed.
 When Docker installed and docker files are ready to go then run…
-$ docker-compose up
-To shut docker down enter ctrl+c
+`$ docker-compose up`
+- To shut docker down enter ctrl+c, then run:
+`$ docker-compose down`
 You’ll learn a better way soon
 ### User Acceptance Tests
-Modify provided unit tests in demo to work for your project.
+- [x] Modify provided unit tests in demo to work for your project.
+  -  `$ python manage.py test` passes
